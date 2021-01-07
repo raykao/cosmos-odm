@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/raykao/cosmos-odm.git"
+    "url": "git+https://github.com/cloudnativegbb/cosmos-odm.git"
   },
   "keywords": [
     "cosmos",
@@ -22,9 +22,9 @@
   "author": "Ray Kao",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/raykao/cosmos-odm/issues"
+    "url": "https://github.com/cloudnativegbb/cosmos-odm/issues"
   },
-  "homepage": "https://github.com/raykao/cosmos-odm#readme",
+  "homepage": "https://github.com/cloudnativegbb/cosmos-odm#readme",
   "dependencies": {
     "@azure/cosmos": "^3.9.2"
   },

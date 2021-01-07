@@ -8,7 +8,7 @@ This project is meant to be a simple ODM library for Cosmos DB via the SQL/"Core
 ## How to use:
 
 ```bash
-npm install --save @cloudnativegbb/cosmos-orm
+npm install --save @cloudnativegbb/cosmos-odm
 ```
 
 
