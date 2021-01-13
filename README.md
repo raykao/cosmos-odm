@@ -15,9 +15,8 @@ npm install --save @cloudnativegbb/cosmos-odm
 ```js
 // models/user-model.js
 
-const Model = require('cosmos-odm');
-const settings = {name: "Users"};
-const User = new Model(settings);
+const CosmosODM = require('cosmos-odm');
+const User = CosmosODM.model("collectionName");
 
 module.exports = User;
 ```
@@ -36,6 +35,29 @@ const index = async function(req, res, next) {
   }
   catch(e){
     next(e);
+  }
+}
+
+const show = async function(req, res, next) {
+  try {
+    const user = await User.findById(req.params.user)
+
+    res.send({
+      user: user
+    });
+  }
+  catch(e) {
+    next(e)
+  }
+}
+
+const create = async function(req, res, next) {
+  try {
+    const newUser = await User.save(req.body)
+
+    res.send({
+      user: newUser
+    })
   }
 }
 ```
